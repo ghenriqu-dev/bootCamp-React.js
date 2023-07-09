@@ -12,7 +12,6 @@ divApp.innerHTML = html
 
 link.addEventListener('click', event =>{
   event.preventDefault()
-
-  if (divApp.innerHTML !== ''){ divApp.innerHTML = '' }
-  else { divApp.innerHTML = html } 
+  divApp.classList.toggle('hide')
+  link.innerHTML = divApp.classList.contains('hide') ? 'Exibir' : 'Esconder'
 })
