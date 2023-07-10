@@ -5,7 +5,7 @@ const john = {
   hobbies: ['Surf', 'Design'],
 }
 
-const {...jane} = {
+const jane = {
   ...john,
   name: 'Jane',
   hobbies: [...john.hobbies, 'MuayThai', 'Programming']
