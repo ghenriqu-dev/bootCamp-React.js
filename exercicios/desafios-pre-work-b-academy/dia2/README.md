@@ -2,7 +2,8 @@
 
 ## Exercício 01 - Imutabilidade
 
-Importe o arquivo `src/immutable.js` no `src/main.js`. Abra o arquivo e olhe o console do navegador.
+Importe o arquivo `src/immutable.js` no `src/main.js`. 
+Abra o arquivo e olhe o console do navegador.
 O resultado dos dois objetos deveria ser diferente. Faça a criação do segundo objeto
 de forma imutável.
 
