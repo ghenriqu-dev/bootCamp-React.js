@@ -1,8 +1,32 @@
-#app {
+:root {
+  --Preto:'#000000';
+  --Roxo: '#800080';
+  --Vermelho: '#FF0000';
+  --Azul: '#0000FF';
+  --Amarelo: '#FFCE30'
+}
+
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.print-colors {
+  display: flex;
+}
+
+.colors {
+  background-color: red;
+  width: 100px;
+  height: 100px;
 }

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dia 3</title>
   </head>
@@ -10,7 +11,20 @@
     <form>
       <label for="name">Nome:</label>
       <input type="text" id="name" data-js="name">
+      
+      <br />
+      
+      <label for="colors" name="colors">Cores Favoritas</label>
+      <select name="colors" data-js="colors" multiple>
+        <option>Preto</option>
+        <option>Roxo</option>
+        <option>Vermelho</option>
+        <option>Azul</option>
+        <option>Amarelo</option>
+      </select>
     </form>
+
+    <div class="print-colors" data-js="print-colors"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
