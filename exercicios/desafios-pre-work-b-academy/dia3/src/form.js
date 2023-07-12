@@ -14,9 +14,13 @@ const capitalize = (str) => {
 }
 
 const createColor = (colors) => {
+    printColors.innerHTML = ''
     colors.forEach(el => {
         const div = document.createElement('div')
-        printColors.appendChild(div)    
+        div.classList.add('colors')
+        div.classList.add(el.color)
+
+        printColors.prepend(div)
     })
 }
 
