@@ -1,6 +1,8 @@
 const nameInput = document.querySelector('[data-js="name"]')
 const colorsSelection = document.querySelector('[data-js="colors"')
 const printColors = document.querySelector('[data-js="print-colors"')
+const hideSection = document.querySelector('[data-js="hide"]')
+const section1 = document.querySelector('[data-js="section1"]')
 
 const capitalize = (str) => {
     return str.map(word => {
@@ -40,4 +42,14 @@ colorsSelection.addEventListener('change', (e) => {
 
     createColor(colors.filter(color => color.selected == true))
 })
+
+hideSection.addEventListener('click', (e) => {
+    e.preventDefault()
+    section1.classList.toggle('section1')
+
+    const text = section1.classList.contains('section1') ? 'Mostrar Sessão 1' : 'Esconder Sessão 1'
+    hideSection.text = text
+})
+
+
 

@@ -8,23 +8,35 @@
     <title>Dia 3</title>
   </head>
   <body>
-    <form>
-      <label for="name">Nome:</label>
-      <input type="text" id="name" data-js="name">
+    <a href="#" class="hide" data-js="hide">Esconder Sessão 1</a>
+    <section data-js="section1">
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" data-js="name">
+        
+        <br />
+        
+        <label for="colors" name="colors">Cores Favoritas</label>
+        <select name="colors" data-js="colors" multiple>
+          <option value="preto">Preto</option>
+          <option value="roxo">Roxo</option>
+          <option value="vermelho">Vermelho</option>
+          <option value="azul">Azul</option>
+          <option value="amarelo">Amarelo</option>
+        </select>
+      </form>
       
-      <br />
-      
-      <label for="colors" name="colors">Cores Favoritas</label>
-      <select name="colors" data-js="colors" multiple>
-        <option value="preto">Preto</option>
-        <option value="roxo">Roxo</option>
-        <option value="vermelho">Vermelho</option>
-        <option value="azul">Azul</option>
-        <option value="amarelo">Amarelo</option>
-      </select>
-    </form>
+      <div class="print-colors" data-js="print-colors"></div>
+    </section>
+    <!-- Imagem (URL), Marca / Modelo, Ano, Placa, Cor e um botão para enviar o formulário -->
+    
+    <section class="section2" data-js="section2">
+      <form>
+        <label for="image">Imagem</label>
+        <input type="text" id="image" data-js="image">
+      </form>
+    </section>
 
-    <div class="print-colors" data-js="print-colors"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
